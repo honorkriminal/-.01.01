@@ -1,5 +1,4 @@
 
-===== 1. Shell, help and command syntax (slides 3-4) =====
 
 $ set -o | head -n 6
 allexport      	off
@@ -38,8 +37,6 @@ $ ls -- -example.txt
 
 $ rm -- -example.txt
 
-===== 2. Working directory (slide 5) =====
-
 $ pwd
 /tmp/linux-files.DAJwGR
 
@@ -59,8 +56,6 @@ $ pwd
 
 $ cd "$lab_dir"
 
-===== 3. Creating directories and files (slide 6) =====
-
 $ mkdir dir
 
 $ mkdir -m 750 private
@@ -78,8 +73,6 @@ $ touch *.txt
 $ ls -ld private nested/level2/level3
 drwxr-xr-x 2 agent agent 40 Nov 17 21:56 nested/level2/level3
 drwxr-x--- 2 agent agent 40 Nov 17 21:56 private
-
-===== 4. Directory listings and file types (slides 2, 7-8) =====
 
 $ ls
 absolute_dir
@@ -137,8 +130,6 @@ drwxr-x--- 2 agent agent    40 Nov 17 21:56 private
 
 $ ls -F "$lab_dir/pic"
 
-===== 5. Removing directories (slide 9) =====
-
 $ rmdir dir
 
 $ mkdir -p removable/child/leaf
@@ -158,8 +149,6 @@ $ mkdir interactive_dir
 
 $ printf "y\n" | rm -irv interactive_dir
 rm: remove directory 'interactive_dir'? removed directory 'interactive_dir'
-
-===== 6. Creating and editing text (slide 10) =====
 
 $ cat > notes.txt <<EOF
 Linux file commands
@@ -184,8 +173,6 @@ $ cat notes.txt
 Linux file commands
 Hello from ed!
 
-===== 7. Viewing files (slide 11) =====
-
 $ cat notes.txt file1.txt
 Linux file commands
 Hello from ed!
@@ -196,8 +183,6 @@ notes.txt
 ::::::::::::::
 Linux file commands
 Hello from ed!
-
-===== 8. Removing files (slide 12) =====
 
 $ touch delete1 delete2 delete3
 
@@ -212,8 +197,6 @@ fileB
 
 $ rm -v fileB
 removed 'fileB'
-
-===== 9. Copying files and directories (slide 13) =====
 
 $ cp notes.txt notes_copy.txt
 
@@ -236,8 +219,6 @@ backup/copies:
 notes.txt
 notes_copy.txt
 
-===== 10. Moving and renaming (slide 14) =====
-
 $ mv notes_copy.txt renamed.txt
 
 $ mv renamed.txt copies
@@ -257,8 +238,6 @@ notes.txt
 notes_copy.txt
 renamed.txt
 
-===== 11. Selecting columns (slide 15) =====
-
 $ cat > tabl1 <<EOF
 1 Ivan   578   moscow
 2 Peter  435   newyork
@@ -274,8 +253,6 @@ $ cut -c 1,3,4,5,15-21 tabl1
 1Iva moscow
 2Pet newyor
 3Sas orel
-
-===== 12. Searching file contents (slides 16-17) =====
 
 $ cat > docs.txt <<EOF
 linux
@@ -353,8 +330,6 @@ EOF
 $ grep '\$1\.00' price
 Tea: $1.00
 
-===== 13. Finding files (slide 18) =====
-
 $ mkdir -p search/subdir
 
 $ touch search/main.c search/subdir/util.c search/new.txt search/old.txt
@@ -419,5 +394,4 @@ search/new.txt
 search/main.c
 search/subdir/util.c
 
-===== Finished =====
-Examples completed successfully. Practice directory: /tmp/linux-files.DAJwGR
+/tmp/linux-files.DAJwGR
