@@ -1,0 +1,37 @@
+Actual terminal session; key presses supplied automatically.
+
+$ cat > cat_notes.txt
+Input: Created with cat; then Ctrl+D
+$ cat cat_notes.txt
+Created with cat
+
+$ vi -u NONE -n vi_notes.txt
+Keys: i -> Hello from vi! -> Esc -> Shift+Z, Shift+Z
+$ cat vi_notes.txt
+Hello from vi!
+
+$ vi -u NONE -n vi_notes.txt
+Keys: i -> UNSAVED -> Esc -> :q! -> Enter
+$ cat vi_notes.txt
+Hello from vi!
+The unsaved change was discarded.
+
+$ more long.txt
+Line 001
+Line 002
+Line 003
+Line 004
+Line 005
+Line 006
+Line 007
+Line 008
+Line 009
+Line 010
+Line 011
+
+Space: next page displayed (contains Line 012).
+Enter: advanced one line.
+b: returned one page.
+q: pager exited successfully.
+
+All interactive examples completed successfully.
